@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanshops | Fresh Essentials. Honest Prices. Community Connected.</title>
+    <style>
+        /* Lanshops "Rooted Modernism" Color Palette */
+        :root {
+            --growth-green: #27A17D;
+            --network-sapphire: #1A2F63;
+            --local-terracotta: #C77A38;
+            --soft-sage: #DAEBE1;
+            --fresh-cream: #FEFDF6;
+            --charcoal-navy: #343A40;
+            --marigold-yellow: #F3C758;
+            --system-cerulean: #4EA8DE;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--fresh-cream);
+            color: var(--charcoal-navy);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background-color: var(--network-sapphire);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .logo span {
+            color: var(--system-cerulean);
+        }
+
+        .logo span.shops {
+            color: var(--local-terracotta);
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--system-cerulean);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--soft-sage);
+            padding: 4rem 5%;
+            text-align: center;
+            border-bottom: 4px solid var(--growth-green);
+        }
+
+        .hero h1 {
+            color: var(--network-sapphire);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            color: var(--charcoal-navy);
+        }
+
+        .cta-button {
+            background-color: var(--local-terracotta);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #a8652d;
+        }
+
+        /* Value Proposition Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 4rem 5%;
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            border-top: 4px solid var(--system-cerulean);
+        }
+
+        .feature-card h3 {
+            color: var(--network-sapphire);
+            margin-bottom: 1rem;
+        }
+
+        /* Waitlist / Coming Soon Form */
+        .waitlist {
+            background-color: var(--network-sapphire);
+            color: white;
+            text-align: center;
+            padding: 4rem 5%;
+        }
+
+        .waitlist h2 {
+            margin-bottom: 1rem;
+            color: var(--marigold-yellow);
+        }
+
+        .waitlist form {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .waitlist input[type="email"] {
+            padding: 12px;
+            width: 300px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .waitlist button {
+            background-color: var(--growth-green);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .waitlist button:hover {
+            background-color: #1e7d61;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0d1730;
+            color: var(--stone-grey);
+            text-align: center;
+            padding: 2rem;
+            color: #aaa;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .nav-links {
+                display: none; /* Can be replaced with a hamburger menu later */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span>LAN</span><span class="shops">SHOPS</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#how-it-works">How It Works</a>
+            <a href="#partner">For Local Shops</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>The Hyperlocal Commerce Ecosystem</h1>
+            <p>End the discount trap. Buy exactly what you need, fresh from your neighborhood shops, at honest, low-margin prices. <strong>Coming soon to your community.</strong></p>
+            <a href="#join" class="cta-button">Join the Waitlist</a>
+        </section>
+
+        <section id="how-it-works" class="features">
+            <div class="feature-card">
+                <h3>Customized Quantities</h3>
+                <p>No more forced bulk buying. Need exactly 200g of fresh veggies? We've got you covered. Buy only what you need and eliminate waste.</p>
+            </div>
+            <div class="feature-card" style="border-top-color: var(--growth-green);">
+                <h3>Honest Pricing</h3>
+                <p>We source directly from producers to our warehouses, bypassing middlemen to bring you everyday essentials at fair, transparent prices.</p>
+            </div>
+            <div class="feature-card" style="border-top-color: var(--local-terracotta);">
+                <h3>Empowering Local Shops</h3>
+                <p>We supply and partner with your favorite neighborhood stores, giving them the digital tools to serve you faster and fresher than ever before.</p>
+            </div>
+        </section>
+
+        <section id="join" class="waitlist">
+            <h2>Be the first to experience Lanshops</h2>
+            <p>We are building the future of daily essentials. Drop your email below to get early access when we launch in your area.</p>
+            <form action="#" method="POST">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Notify Me</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lanshops. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
